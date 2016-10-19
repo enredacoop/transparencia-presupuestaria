@@ -3,7 +3,19 @@ Transparencia Presupuestaria
 
 Herramienta para la construcción de sitios web de Transparencia Presupuestaria
 
+## Interfaces
+
+### Página de inicio
+
 ![Home](screenshots/home.png)
+
+### Visualización del presupuesto
+
+![Presupuesto](screenshots/presupuesto.png)
+
+### Comparativa entre partidas
+
+![Compara](screenshots/compara.png)
 
 ## Requisitos
 
