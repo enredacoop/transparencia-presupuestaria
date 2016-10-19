@@ -3,6 +3,8 @@ Transparencia Presupuestaria
 
 Herramienta para la construcción de sitios web de Transparencia Presupuestaria
 
+![Home](screenshots/home.png)
+
 ## Requisitos
 
 Tener instalado nodejs y npm en tu máquina.
