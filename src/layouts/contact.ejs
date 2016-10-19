@@ -1,0 +1,83 @@
+<% include common/start %>
+
+<% include common/header %>
+
+<div id="contact" class="wrapper">
+    <div class="bg-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row main-title">
+                    <div class="col-md-4 col-sm-10 col-xs-12">
+                      <h1><%= data.title %></h1>
+                      <% if (data.subtitle != '') { %>
+                        <h5><%= data.subtitle %></h5>
+                      <% } %>
+                    </div>
+                </div>
+                <div class="row main-content">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <p class="description"><%= data.description %></p>
+                            </div>
+                        </div>
+                        <div class="row office-block">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <p class="institution">
+                                            <%= data.institution %><br>
+                                            <%= data.departament %><br>
+                                            <%= data.office %>
+                                        </p>
+                                        <% if (data.googlemaps !== "") { %>
+                                            <a href="<%= data.googlemaps %>" class="btn btn-primary" target="_blank"><i class="fa fa-map-marker"></i> Ver en Google Maps</a>
+                                            <% } %>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <p>
+                                            <%= data.email %><br>
+                                            <%= data.phone %><br><br>
+                                            <%= data.address1 %><br>
+                                            <% if (data.address2 !== "") { %>
+                                                <%= data.address2 %><br>
+                                            <% } %>
+                                            <%= data.zipcode %>, <%= data.city %> (<%= data.province %>)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row responsible-block">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <p class="title">Responsable:</p>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <p>
+                                            <%= data.contactname %><br>
+                                            <%= data.contactemail %><br>
+                                            <% if (data.contactphone !== "") { %>
+                                                <%= data.contactphone %>
+                                            <% } %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if (global.has_footer) { %>
+  <% include common/footer %>
+<% } %>
+
+<% include loadjs %>
+
+<% include common/end %>

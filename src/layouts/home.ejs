@@ -1,0 +1,62 @@
+<% include common/start %>
+
+<% include common/header %>
+
+<div id="home" class="wrapper">
+    <% if (global.has_letter) { %>
+      <div class="bg-block"></div>
+    <% } %>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <% if (global.has_letter) { %>
+                  <div class="row main-title">
+                      <div class="col-md-6 col-sm-10 col-xs-12">
+                        <h5>BIENVENIDA/O</h5>
+                        <h1><%= data.title %></h1>
+                        <h5>Esperamos ser de ayuda</h5>
+                      </div>
+                  </div>
+                  <div class="row main-content">
+                      <div class="col-sm-6 col-sm-offset-3 col-xs-12 letter">
+                          <% for(i=0;i<data.letter.length;i++) {%>
+                              <p><%= data.letter[i].paragraph %></p>
+                          <% } %>
+                          <div class="signed">
+                            <%= data.signed1 %>
+                            <br/>
+                            <%= data.signed2 %>
+                          </div>
+                      </div>
+                  </div>
+                <% } %>
+                <div class="row main-footer">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1 text-center">
+                              <p><%= data.cta_desc1 %><br/> <%= data.cta_desc2 %></p>
+                              <h6>̉<%= data.cta_answer %></h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <a class="btn btn-default btn-lg btn-lg-custom b1" href="/presupuesto"><%= data.cta_button1 %></a>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <a class="btn btn-default btn-lg btn-lg-custom b1" href="/compara"><%= data.cta_button2 %></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if (global.has_footer) { %>
+  <% include common/footer %>
+<% } %>
+
+<% include loadjs %>
+
+<% include common/end %>

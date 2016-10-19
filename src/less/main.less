@@ -1,0 +1,533 @@
+/********** GENERAL **********/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+
+@font: 'Roboto';
+@handfont: 'Shadows Into Light Two';
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: @font, sans-serif;
+    background-color: @lightgrey_color;
+}
+
+::-moz-selection { .make-contrast(@primary_color); background-color: @primary_color; }
+::selection { .make-contrast(@primary_color); background-color: @primary_color; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.text-primary {
+  color: @primary_color;
+}
+
+.wrapper {
+  padding: 50px 0px 100px 0px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.bg-block {
+  background: @primary_color;
+  position: absolute;
+  height: 350px;
+  width: 100%;
+}
+.main-title {
+  padding: 50px 0px 50px 0px;
+  .make-contrast(@primary_color);
+  .make-contrast(@primary_color);
+}
+
+.main-content {
+  background: @white_color;
+  border: 1px solid darken(@lightgrey_color, 5%);
+  padding: 100px 0px 100px 0px;
+}
+
+.main-footer {
+  padding-bottom: 100px;
+  p {
+    font-size: 2.2em;
+    color: @primary_color;
+    padding: 100px 0px 30px 0px;
+  }
+  h6 {
+    color: @primary_color;
+    padding: 0px 0px 50px 0px;
+  }
+}
+
+.btn-lg-custom {
+  width: 100%;
+  height: 100px;
+  line-height: 80px;
+}
+.b1 {
+  background-color: @primary_color;
+  .make-contrast(@primary_color);
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 0;
+  &:hover {
+    .make-contrast(@primary_color);
+    background-color: darken(@primary_color, 10%);
+  }
+}
+.b2 {
+  background-color: @darkgrey_color;
+  .make-contrast(@darkgrey_color);
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 0;
+  &:hover {
+    .make-contrast(@darkgrey_color);
+    background-color: darken(@darkgrey_color, 10%);
+  }
+}
+
+.select-budget-type {
+    margin-bottom: 20px;
+}
+.select-budget-type input[type="radio"] {
+    display: none;
+}
+.select-budget-type label {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: @darkgrey_color;
+    cursor: pointer;
+}
+.select-budget-type input[type="radio"]:checked + label { 
+    color: @primary_color;
+    border-bottom: 4px solid @primary_color; 
+}
+
+
+/********** HEADER **********/
+
+header {
+  .navbar {
+    margin-bottom: 0px;
+    .navbar-brand {
+      margin-top: -10px;
+      img {
+        height: 45px;
+      }  
+    }
+  }
+  .navbar-custom {
+    font-size: 16px;
+    background-color: @white_color;
+    color: @primary_color;
+   
+    a {
+      color: @primary_color;
+      font-weight: bold;
+      &:hover {
+        background-color: @white_color;
+         color: @primary_color;
+      }
+    }
+    
+  }
+}
+
+/********** MENU (override) *********/
+.overlay {
+  background: @primary_color; 
+  ul li a {
+    color: #fff;
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}
+
+/********** HOME **********/
+
+#home {
+  .letter {
+    padding: 20px 0px 20px 0px;
+    p {
+      margin-bottom: 25px;
+    }
+    .signed {
+      font-family: @handfont, cursive;
+      font-size: 1.2em;
+      padding-top: 100px;
+    }
+  }
+}
+
+/********** DOWNLOAD **********/
+
+#download {
+  h4 {
+    color: @primary_color;
+  }
+  .table-hover {
+    font-size: 18px;
+    color: @black_color;
+    tr {
+      background-color: tint(@primary_color, 85%);
+    }
+    tr:hover {
+      background-color: tint(@primary_color, 75%);
+    }
+    a {
+      color: @black_color;
+      &:hover, &:link, &:visited {
+        color: @black_color;
+        text-decoration: none;
+        i {
+          color: @primary_color;
+        }
+      }
+      i {
+        color: @primary_color;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/********** CONTACT **********/
+
+#contact {
+  .description {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .office-block {
+    background-color: tint(@primary_color, 85%);
+    padding: 48px;
+    .institution {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .responsible-block {
+    background-color: tint(@primary_color, 75%);
+    padding: 48px;
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+/********** FOOTER **********/
+
+footer {
+    padding: 30px 0;
+    background-color: @primary_color;
+    .make-contrast(@primary_color);
+
+    .row {
+      padding-bottom: 40px;
+
+      h5 {
+        text-transform: uppercase;
+      }
+
+      li {
+        a {
+          .make-contrast(@primary_color);
+          &:hover {
+            .make-contrast(@primary_color);
+            text-decoration: underline;
+          }
+        }
+      }
+
+      p.copyright {
+          margin: 15px 0 0;
+      }
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/********** TREEMAP **********/
+
+#treemaps {
+
+  .select-budget-type {
+    margin-bottom: 40px;
+  }
+
+  .tabbable {
+    margin-bottom: 40px;
+    .nav-pills {
+      li {
+        font-size: 24px;
+        padding: 2px;
+        a {
+          .make-contrast(@darkgrey_color);
+          background-color: @darkgrey_color;
+          border-radius: 0px;
+        }
+        /*&.active:hover {
+          background-color: @primary_color;
+          a { .make-contrast(@primary_color); }
+        }
+        &:hover {
+          background-color: @darkgrey_color;
+          a { .make-contrast(@darkgrey_color); }
+        }*/
+      }
+      li.active {
+          a {
+            .make-contrast(@primary_color);
+            background-color: @primary_color;
+          }
+      }
+    }
+  }
+
+}
+
+.info-alert {
+  padding-top: 100px;
+  font-size: 2em;
+  color: @darkgrey_color;
+  font-style: italic;
+}
+.info-alert.small {
+  font-size: 1.2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#tooltip, #helptip {
+  display: none;
+  position: absolute;
+  color: white;
+  line-height: 1.1;
+  background: @lightblack_color;
+  padding: 5px 10px 5px 10px;
+  /* -moz-border-radius: 4px 4px; */
+  /* border-radius: 4px 4px; */
+  pointer-events: none;
+  #tooltip-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+  }
+  #tooltip-money {
+    font-size:14px;
+  }
+  #helptip-text {
+    font-size: 16px;
+  }
+}
+
+#treemap {
+  min-height: 400px;
+  background: @white_color;
+}
+
+text {
+  pointer-events: none;
+}
+
+.title {
+  font-size: 1.1em;
+  text-align: center;
+  text-anchor: middle;
+}
+.money {
+  font-size: 1em;
+  fill: @lightblack_color;
+
+}
+
+.grandparent text {
+  .fill-contrast(@primary_color);
+}
+.grandparent .gp-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.grandparent .gp-money {
+  font-size: 1.2em;
+}
+
+rect {
+  fill: none;
+  stroke: @white_color;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 5px;
+}
+
+.grandparent rect {
+  fill: @primary_color;
+}
+
+.grandparent:hover rect {
+  fill: darken(@primary_color, 5%);
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  opacity: 0.4;
+}
+
+.children:hover rect.parent {
+  opacity: 0.8;
+}
+.child {
+  opacity: 0.4;
+}
+
+.total-percentage {
+  font-size: 2em;
+  fill: @primary_color;
+}
+.progress-bg {
+  fill: lighten(@darkgrey_color, 15%);
+}
+.progress-fg {
+  fill: @primary_color;
+}
+
+/********** AREA **********/
+
+#compare {
+
+  .select-budget-type, .form-search {
+    margin-bottom: 40px;
+  }
+
+  #area-graph {
+    min-height: 400px;
+  }
+
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; cursor: pointer; }
+.autocomplete-selected { background: #e7e7e7; }
+.autocomplete-suggestions strong { font-weight: bold; color: @primary_color; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.observations {
+  color: @lightblack_color;
+  padding-top: 30px;
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+.y.axis {
+  .tick {
+    text {
+     font-size: 11px;
+     fill: @primary_color;
+     font-weight: bold;
+    }
+  }
+}
+.x.axis {
+  .tick {
+    text {
+     font-size: 24px;
+     fill: @primary_color;
+     font-weight: bold;
+    }
+  }
+}
+.xval.axis {
+  .tick {
+    text {
+     font-size: 16px;
+     fill: lighten(@primary_color, 20%);
+     font-weight: bold;
+    }
+  }
+}
+text.positive {
+ font-size: 36px;
+ fill: @green_color;
+ font-weight: bold;
+}
+text.negative {
+ font-size: 36px;
+ fill: @red_color;
+ font-weight: bold;
+}
+text.equal {
+ font-size: 36px;
+ fill: lighten(@lightblack_color, 20%);
+ font-weight: bold;
+}
+.area {
+  fill: none;
+}
+.line {
+  fill: none;
+  stroke: @primary_color;
+  stroke-width: 5px;
+}
+
+.dot {
+  fill: #fff;
+  stroke: @primary_color;
+  stroke-width: 5px;
+}
+
+rect.zebra1 {
+  fill: lighten(@secondary_color, 20%);
+}
+rect.zebra2 {
+  fill: lighten(@secondary_color, 15%);
+}
+rect.positive {
+  fill: @green_color;
+}
+rect.negative {
+  fill: @red_color;
+}
+rect.equal {
+  fill: lighten(@lightblack_color, 20%);
+}
+

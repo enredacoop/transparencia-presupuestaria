@@ -1,0 +1,59 @@
+<% include common/start %>
+
+<% include common/header %>
+
+<div id="download" class="wrapper">
+    <div class="bg-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row main-title">
+                    <div class="col-md-4 col-sm-10 col-xs-12">
+                      <h1><%= data.title %></h1>
+                      <% if (data.subtitle != '') { %>
+                        <h5><%= data.subtitle %></h5>
+                      <% } %>
+                    </div>
+                </div>
+                <div class="row main-content">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12 letter">
+                        <% for(var i=0; i<data.items.length; i++) { %>
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <h4><%= data.items[i].year %></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <% for(var j=0; j<data.items[i].items.length; j++) { %>
+                                                <tr>
+                                                    <td width="80%"><%= data.items[i].items[j].title %></td>
+                                                    <td width="20%" class="text-center">
+                                                        <a href="<%= data.items[i].items[j].url %>" target="_blank">
+                                                            <%= data.items[i].items[j].format %> <img src="/assets/images/icon_download.svg" />
+                                                            <!--<%= data.items[i].items[j].format %> <i class="fa fa-arrow-circle-down"></i>-->
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <% } %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if (global.has_footer) { %>
+  <% include common/footer %>
+<% } %>
+
+<% include loadjs %>
+
+<% include common/end %>

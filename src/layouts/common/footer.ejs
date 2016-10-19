@@ -1,0 +1,45 @@
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>Menú</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/">Bienvenida</a>
+                    </li>
+                    <li>
+                        <a href="/global">Presupuesto</a>
+                    </li>
+                    <li>
+                        <a href="/compara">Compara</a>
+                    </li>
+                    <li>
+                        <a href="/descargas">Descarga</a>
+                    </li>
+                    <li>
+                        <a href="/contacta">Contacta</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h5>Enlaces</h5>
+                <ul class="list-unstyled">
+                    <% for(var i=0; i<global.infolinks.length; i++) { %>
+                        <li><a href="<%= global.infolinks[i].url %>" target="_blank"><%= global.infolinks[i].name %></a></li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h5>Créditos</h5>
+                <p class="copyright">
+                    <%= global.site_name %>, <%= global.current_year %><br/>
+                    <%= global.copyright %>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

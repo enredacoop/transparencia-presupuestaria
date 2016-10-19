@@ -1,0 +1,77 @@
+<% include common/start %>
+
+<% include common/header %>
+
+<div id="treemaps" class="wrapper">
+    <div class="bg-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                
+                <div class="row main-title">
+                    <div class="col-md-4 col-sm-10 col-xs-12">
+                      <h1><%= data.title %></h1>
+                      <% if (data.subtitle != '') { %>
+                        <h5><%= data.subtitle %></h5>
+                      <% } %>
+                    </div>
+                </div>
+
+                <div class="row main-content">
+                  <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12 select-budget-type text-center">
+                            <input type="radio" id="incomes-type" name="budget-type" value="incomes">
+                            <label for="incomes-type" data-type="incomes" class="global-change">Ingresos</label>
+                            <input type="radio" id="expenses-type" name="budget-type"value="expenses" checked>
+                            <label for="expenses-type" data-type="expenses" class="global-change">Gastos</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center">
+                            <div class="tabbable">
+                                <ul class="nav nav-pills nav-justified">
+                                    <% for(var i=0; i<global.years.length; i++) { %>
+                                        <% if (i == global.years.length - 1) { %>
+                                            <li role="<%= global.years[i].year %>" class="active"><a href="#<%= global.years[i].year %>" data-toggle="tab" class="global-change"><%= global.years[i].year %></a></li>
+                                        <% } else { %>
+                                            <li role="<%= global.years[i].year %>" class=""><a href="#<%= global.years[i].year %>" data-toggle="tab" class="global-change"><%= global.years[i].year %></a></li>
+                                        <% } %>
+                                    <% } %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <div id="treemap"></div>
+                            <input type="hidden" id="selectedYear" value="" />
+                            <input type="hidden" id="selectedType" value="" />
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="helptip">
+  <div id="helptip-text">Pulse aquí para subir un nivel</div>
+</div>
+<div id="tooltip">
+  <div id="tooltip-title"></div>
+  <div id="tooltip-money"></div>
+</div>
+
+<% if (global.has_footer) { %>
+  <% include common/footer %>
+<% } %>
+
+<% include loadjs %>
+<% include loadjstreemap %>
+
+<% include common/end %>

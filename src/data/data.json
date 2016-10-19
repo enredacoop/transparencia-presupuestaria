@@ -1,0 +1,72 @@
+{
+  "home": {
+    "title": "Estás en la página de Transparencia Presupuestaria del Ayuntamiento de Macondo",
+    "letter": [
+      {"paragraph": "Los Ayuntamientos, como Administración más cercana a la ciudadanía, deben situarse a la vanguardia en el desarrollo de iniciativas para fomentar la transparencia, la participación ciudadana y la colaboración, ejes fundamentales del Gobierno Abierto. Con esta premisa, presentamos una herramienta para la visualización  los presupuestos municipales, que combina la claridad en las cuentas y la pedagogía sobre las mismas."},
+      {"paragraph": "¿Por qué transparencia presupuestaria? Entendemos que el presupuesto es el instrumento estratégico, de carácter anual, más relevante de los Ayuntamientos; y debemos hacer un esfuerzo para explicar en qué consisten, a qué va destinada cada partida y qué hacemos con cada céntimo público ingresado o gastado."},
+      {"paragraph": "Además de posibilitar el acceso a la información por parte de cualquier ciudadano/a con conexión a internet, este proyecto permite descargar los datos para trabajar con los mismos, acceder a visualizaciones y realizar comparativas entre distintos años."},
+      {"paragraph": "En definitiva, abrimos un nuevo acceso a nuestro Ayuntamiento para que la ciudadanía conozca y comprenda un apartado fundamental de la gestión municipal. Te animamos a que navegues por esta novedosa experiencia para seguir construyendo, entre todas y todos, una ciudad más transparente, colaborativa y participativa."}
+    ],
+    "signed1": "Firma",
+    "signed2": "Alcalde/sa",
+    "cta_desc1": "Descubre de forma sencilla",
+    "cta_desc2": "a qué se ha destinado el dinero municipal",
+    "cta_answer": "¿QUÉ PREFIERES CONOCER?",
+    "cta_button1": "Navega por el presupuesto",
+    "cta_button2": "Compara partidas específicas"
+  },
+  "presupuesto": {
+    "title": "Presupuesto",
+    "subtitle": ""
+  },
+  "compare": {
+    "title": "Compara",
+    "subtitle": "Compara el presupuesto asignado a una partida/política concreta durante los últimos tres años"
+  },
+  "downloads": {
+    "title": "Descarga",
+    "subtitle": "",
+    "items": [
+      {
+        "year": "2014",
+        "items": [ 
+            {"title": "Presupuesto de ingresos", "format": "CSV", "url": ""},
+            {"title": "Presupuesto de gastos", "format": "CSV", "url": ""}
+        ]
+      },
+      {
+        "year": "2015",
+        "items": [ 
+            {"title": "Presupuesto de ingresos", "format": "CSV", "url": ""},
+            {"title": "Presupuesto de gastos", "format": "CSV", "url": ""}
+        ]
+      },
+      {
+        "year": "2016",
+        "items": [ 
+            {"title": "Presupuesto de ingresos", "format": "CSV", "url": ""},
+            {"title": "Presupuesto de gastos", "format": "CSV", "url": ""}
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacta",
+    "subtitle": "",
+    "description": "Aquí irán los datos del Ayuntamiento pero aprovechamos esta sección para proporcionarte los nuestros por si quieres que tu ayuntamiento disponga de una herramienta como esta.",
+    "institution": "Enreda, S.C.A.",
+    "departament": "Transparencia y Participación",
+    "office": "",
+    "googlemaps": "",
+    "address1": "Avda. República Argentina 25 Planta 9",
+    "address2": "Espacio RES",
+    "city": "Sevilla",
+    "zipcode": "41011",
+    "province": "Sevilla",
+    "email": "info@enreda.coop",
+    "phone": "954 32 35 05",
+    "contactname": "Pablo Martín Muñoz",
+    "contactemail": "pablo.martin@enreda.coop",
+    "contactphone": ""
+  }
+}

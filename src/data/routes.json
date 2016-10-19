@@ -1,0 +1,42 @@
+{
+  "home": {
+    "path_to_layout": "src/layouts/home.ejs",
+    "path_to_data": [
+      "src/data/global.json",
+      {"src/data/meta.json": "home"},
+      {"src/data/data.json": "home"}
+    ]
+  },
+  "presupuesto": {
+    "path_to_layout": "src/layouts/presupuesto.ejs",
+    "path_to_data": [
+      "src/data/global.json",
+      {"src/data/meta.json": "presupuesto"},
+      {"src/data/data.json": "presupuesto"}
+    ]
+  },
+  "compara": {
+    "path_to_layout": "src/layouts/compare.ejs",
+    "path_to_data": [
+      "src/data/global.json",
+      {"src/data/meta.json": "compare"},
+      {"src/data/data.json": "compare"}
+    ]
+  },
+  "descarga": {
+    "path_to_layout": "src/layouts/downloads.ejs",
+    "path_to_data": [
+      "src/data/global.json",
+      {"src/data/meta.json": "downloads"},
+      {"src/data/data.json": "downloads"}
+    ]
+  },
+  "contacta": {
+    "path_to_layout": "src/layouts/contact.ejs",
+    "path_to_data": [
+      "src/data/global.json",
+      {"src/data/meta.json": "contact"},
+      {"src/data/data.json": "contact"}
+    ]
+  }
+}

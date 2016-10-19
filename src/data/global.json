@@ -1,0 +1,20 @@
+{
+  "site_name": "Transparencia Presupuestaria del Ayuntamiento de Macondo",
+  "site_name_short": "Transparencia Presupuestaria",
+  "current_year": "2016",
+  "copyright": "Algunos derechos reservados",
+  "google_analytics": "XOXOXO",
+  "logo": "logo.png",
+  "has_letter": true,
+  "has_footer": true,
+  "years": [
+    {"year": "2014"},
+    {"year": "2015"},
+    {"year": "2016"}
+  ],
+  "infolinks": [
+    {"name": "Enreda", "url": "http://enreda.coop"},
+    {"name": "Transparencia y Participación", "url": "http://enreda.coop/lineas/transparencia-y-participacion/"},
+    {"name": "Hazlo Transparente", "url": "http://hazlotransparente.es/"}
+  ]
+}

@@ -1,0 +1,84 @@
+<% include common/start %>
+
+<% include common/header %>
+
+<div id="compare" class="wrapper">
+    <div class="bg-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row main-title">
+                    <div class="col-md-4 col-sm-10 col-xs-12">
+                      <h1><%= data.title %></h1>
+                      <% if (data.subtitle != '') { %>
+                        <h5><%= data.subtitle %></h5>
+                      <% } %>
+                    </div>
+                </div>
+                <div class="row main-content">
+                    <div class="col-xs-12">
+
+                      <div class="row">
+                          <div class="col-xs-12 select-budget-type text-center">
+                              <input type="radio" id="incomes-type" name="budget-type" value="incomes">
+                              <label for="incomes-type" class="budget-change">Ingresos</label>
+                              <input type="radio" id="expenses-type" name="budget-type"value="expenses" checked>
+                              <label for="expenses-type" class="budget-change">Gastos</label>
+                          </div>
+                      </div>
+
+                      <div class="row form-search">
+                          <div class="col-md-6 col-md-offset-3 col-sm-12 form-group">
+                            <select class="form-control" id="select-expenses">
+                              <option value="-1">Seleccione una partida</option>
+                              <option value="231">Asistencia social primaria</option>
+                              <option value="320">Administración general de educación</option>
+                              <option value="332">Bibliotecas y archivos</option>
+                              <option value="341">Promoción y fomento del deporte</option>
+                              <option value="942">Participación ciudadana</option>
+                            </select>
+                            <select class="form-control" id="select-incomes" style="display:none;">
+                              <option value="-1">Seleccione una partida</option>
+                              <option value="100">Impuestos sobre la Renta de las personas físicas</option>
+                              <option value="210">Impuesto sobre el Valor Añadido</option>
+                              <option value="321">Licencias urbanísticas</option>
+                              <option value="420">Transferencias corrientes de la Administración General del Estado</option>
+                              <option value="534">Dividendos y participación en beneficios de las sociedades mercantiles, entidades públicas empresariales y otros organismos públicos</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 col-md-offset-3 col-sm-12 form-group">
+                            <input class="form-control" type="text" id="autocomplete-expenses" placeholder="Escribe el nombre de una partida de gastos (bibliotecas, limpieza, deuda pública, ...)" value="" />
+                            <input class="form-control" type="text" id="autocomplete-incomes" placeholder="Escribe el nombre de una partida de ingresos (multas, licencias urbanísticas, impuesto sobre la cerveza, ...)" value="" style="display:none;" />
+                            <input type="hidden" id="searchvalue" value="-1" />
+                            <input id="input1" type="hidden" value="0">
+                            <input id="input2" type="hidden" value="0">
+                            <input id="input3" type="hidden" value="0">
+                          </div>
+                          <div class="col-md-6 col-md-offset-3 col-sm-12 form-group">
+                            <span id="refresh" class="btn btn-default b1 btn-lg btn-block">Compara</span>
+                          </div>
+                      </div>
+
+                      <div id="area-graph" class="text-center"></div>
+
+                      <div class="observations">
+                        <div id="observation1"></div>
+                        <div id="observation2"></div>
+                        <div id="observation3"></div>
+                      </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if (global.has_footer) { %>
+  <% include common/footer %>
+<% } %>
+
+<% include loadjs %>
+<% include loadjsarea %>
+
+<% include common/end %>

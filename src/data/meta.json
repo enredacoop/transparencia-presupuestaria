@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "Apostamos por la Transparencia",
+    "description": "Los Ayuntamientos, como Administración más cercana a la ciudadanía, deben situarse a la vanguardia en el desarrollo de iniciativas para fomentar la transparencia, la participación ciudadana y la colaboración, ejes fundamentales del Gobierno Abierto.",
+    "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
+  },
+  "presupuesto": {
+    "title": "Visualización Global",
+    "description": "Visualiza los presupuestps municipales de forma atractiva para facilitar la comprensión de los mimsos y fomentar la participación en los procesos de presupuestos participativos.",
+    "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
+  },
+  "compare": {
+    "title": "Compara y Descubre",
+    "description": "Compara cada partida presupuestaria por separado en los  últimos tres años para facilitar la comprensión de los mimsos y fomentar la participación en los procesos de presupuestos participativos.",
+    "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
+  },
+  "downloads": {
+    "title": "Zona de descargas",
+    "description": "Zona de descarga de los presupuestos municipales para fomentar la apertura de datos y la reutilización de los mismos.",
+    "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
+  },
+  "contact": {
+    "title": "Contacta con nosotras",
+    "description": "Página de contacto para ampliar más información sobre el proyecto de transparencia presupuestaria.",
+    "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
+  }
+}
