@@ -23,6 +23,14 @@
       {"src/data/data.json": "compare"}
     ]
   },
+  "glosario": {
+    "path_to_layout": "src/layouts/glossary.ejs",
+    "path_to_data": [
+      "src/data/global.json",
+      {"src/data/meta.json": "glossary"},
+      {"src/data/data.json": "glossary"}
+    ]
+  },
   "descarga": {
     "path_to_layout": "src/layouts/downloads.ejs",
     "path_to_data": [

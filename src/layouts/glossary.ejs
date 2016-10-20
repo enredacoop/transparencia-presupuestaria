@@ -1,0 +1,55 @@
+<% include common/start %>
+
+<% include common/header %>
+
+<div id="glossary" class="wrapper">
+    <div class="bg-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row main-title">
+                    <div class="col-md-4 col-sm-10 col-xs-12">
+                      <h1><%= data.title %></h1>
+                      <% if (data.subtitle != '') { %>
+                        <h5><%= data.subtitle %></h5>
+                      <% } %>
+                    </div>
+                </div>
+                <div class="row main-content letter">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                      <h3>Introducción</h3>
+                      <p><%= data.intro %></p>
+                      <h3>Definiciones generales</h3>
+                      <ul class="list-unstyled">
+                        <% for(var i=0; i<data.general.length; i++) { %>
+                        <li><strong><%= data.general[i].title %></strong>: <%= data.general[i].description %></li>
+                        <% } %>
+                      </ul>
+                      <h3>Explicación de las principales partidas de gastos</h3>
+                      <ul class="list-unstyled">
+                        <% for(var i=0; i<data.expenses.length; i++) { %>
+                        <li><strong><%= data.expenses[i].title %></strong>: <%= data.expenses[i].description %></li>
+                        <% } %>
+                      </ul>
+                      <h3>Explicación de las principales partidas de ingresos</h3>
+                      <ul class="list-unstyled">
+                        <% for(var i=0; i<data.incomes.length; i++) { %>
+                        <li><strong><%= data.incomes[i].title %></strong>: <%= data.incomes[i].description %></li>
+                        <% } %>
+                      </ul>
+                      <hr>
+                      <small>Advertencia: Las definiciones contenidas este Glosario Presupuestario son simplificaciones creadas con el objetivo de acercar y hacer comprensible el presupuesto del Ayuntamiento de Marbella a toda la ciudadanía. Para leer la definición legal de lo que se incluye en cada partida presupuestaria puede consultar en el BOE la <a href="http://www.boe.es/buscar/doc.php?id=BOE-A-2008-19916" target="_blank">Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales. y la Orden HAP/419/2014, de 14 de marzo, por la que se modifica la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales</a>.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if (global.has_footer) { %>
+  <% include common/footer %>
+<% } %>
+
+<% include loadjs %>
+
+<% include common/end %>

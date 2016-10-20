@@ -14,6 +14,11 @@
     "description": "Compara cada partida presupuestaria por separado en los  últimos tres años para facilitar la comprensión de los mimsos y fomentar la participación en los procesos de presupuestos participativos.",
     "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
   },
+  "glossary": {
+    "title": "Glosario presupuestario",
+    "description": "Glosario de términos de los presupuestos de gastos e ingresos.",
+    "keywords": "transparencia, participacion, ciudadania, ogov, open data, presupuestos, gobierno abierto"
+  },
   "downloads": {
     "title": "Zona de descargas",
     "description": "Zona de descarga de los presupuestos municipales para fomentar la apertura de datos y la reutilización de los mismos.",

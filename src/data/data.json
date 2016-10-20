@@ -23,6 +23,40 @@
     "title": "Compara",
     "subtitle": "Compara el presupuesto asignado a una partida/política concreta durante los últimos tres años"
   },
+  "glossary": {
+    "title": "Glosario presupuestario",
+    "subtitle": "",
+    "intro": "Para facilitar la comprensión de este presupuesto por parte de toda la ciudadanía de Macondo, incluimos este pequeño glosario donde se explican los principales conceptos que verás navegando por el presupuesto y en los documentos que podrás encontrar en la sección de  descargas",
+    "general": [ 
+        {"title": "Presupuesto", "description": "El presupuesto del Ayuntamiento es un plan económico y financiero que contiene una previsión de los ingresos que va a obtener y los gastos que como máximo podrá realizar durante el ejercicio presupuestario. "},
+        {"title": "Partida presupuestaria", "description": "Las partidas son las unidades presupuestarias (los “saquitos”) a los que se atribuyen los ingresos y los gastos. Las partidas de gastos responden a una necesidad concreta y específica. El dinero atribuido a cada partida solo puede destinarse  al objetivo previsto, y ningún otro gasto que no sea ese se puede pagar de ahí."},
+        {"title": "Anexo de inversiones", "description": "Es un documento que acompaña al presupuesto donde se recoge la relación detallada los proyectos de inversión previstos"},
+        {"title": "Liquidación", "description": "La liquidación del presupuesto consiste en verificar al final del ciclo presupuestario cuánto dinero se ha ingresado y gastado realmente en cada uno de los apartados del presupuesto, frente a las previsiones iniciales."}
+    ],
+    "expenses": [
+        {"title": "Servicios púnlicos básicos", "description": "Los servicios públicos básicos son el principal gasto del Ayuntamiento. Esta partida incluye los cuatro servicios que todos los ayuntamientos están obligados a prestar por ley: seguridad y movilidad ciudadana, vivienda y urbanismo, bienestar comunitario y medio ambiente. Vamos a verlos cada uno en detalle."},
+        {"title": "Seguridad y movilidad ciudadana", "description": "Comprende todos los gastos que realiza el Ayuntamiento para colaborar en apoyo de los servicios de protección y defensa civil, actuaciones en caso de calamidades o catástrofes, extinción de incendios y acciones en general destinadas a la protección de los bienes de los marbellís, así como las que se refieran a la ordenación del tráfico y del estacionamiento de vehículos."},
+        {"title": "Vivienda y urbanismo", "description": "Aquí se incluyen los gastos en promoción pública de viviendas, así como las ayudas que posibilitan el acceso a la vivienda. Además de todas las partidas dedicadas a  la construcción, mejora y conservación de las vías públicas."},
+        {"title": "Bienestar comunitario", "description": "Comprende todos los gastos relativos a actuaciones y servicios cuya finalidad es la mejora de la calidad de vida en general: distribución de agua; recogida de basuras; limpieza viaria; cementerios y otros servicios de bienestar comunitario."},
+        {"title": "Medio ambiente", "description": "En esta política se incluyen todos los gastos del Ayuntamiento para la protección y mejora del medio ambiente así como los de inversión y funcionamiento de los servicios de protección del medio natural; repoblación forestal; defensa contra incendios forestales, deslinde y amojonamiento o lucha contra la desertización; mantenimiento de playas, etc"},
+        {"title": "Actuaciones de promoción y protección social", "description": "Se incluyen en esta partida todos los gastos del  carácter benéfico-asistencial; atenciones a grupos con necesidades especiales; medidas de fomento del empleo."},
+        {"title": "Producción de bienes públicos de carácter permanete", "description": "Se incluyen todos los gastos que realiza el Ayuntamientos en relación con la sanidad, educación, cultura, con el ocio y el tiempo libre, deporte, y, en general, todos aquellos tendentes a la elevación o mejora de la calidad de vida."},
+        {"title": "Actuaciones de carácter económico", "description": "Se integran en esta área los gastos que tienden a desarrollar el potencial de los distintos sectores de la actividad económica. Se incluyen además los gastos en infraestructuras básicas y de transportes;  y los de investigación, desarrollo e innovación."},
+        {"title": "Actuaciones de carácter general", "description": "Esta área agrupa los gastos relativos a actividades que realice el Ayuntamiento en el ejercicio de sus funciones de gobierno o de apoyo administrativo y de soporte lógico y técnico a toda la organización."},
+        {"title": "Deuda pública", "description": "Esta partida comprende todos lo que gasta el Ayuntamiento en intereses y amortización de la Deuda Pública y demás operaciones financieras de naturaleza análoga, con exclusión de los gastos que ocasione la formalización de las mismas."}
+    ],
+    "incomes": [
+        {"title": "Impuestos directos", "description": "Son los impuestos que ingresa el Ayuntamiento cuyo objeto es gravar directamente las cosas que ponen de manifiesto la “riqueza” del sujeto: el patrimonio; la propiedad de una vivienda (IBI); la renta (IRPF)  o el ejercicio de una actividad empresarial (I.A.E.)."},
+        {"title": "Impuestos indirectos", "description": "Son los impuestos que gravan el consumo, ya sea el consumo en general (IVA) o consumos específicos (impuesto sobre la cerveza...)  o la realización de cualquier tipo de construcción (Impuesto sobre construcciones, instalaciones y obras)."},
+        {"title": "Tasas y otros ingresos", "description": "Son los tributo que cobra el Ayuntamiento por la prestación de un servicio que beneficia directamente al interesado, como la recogida de basuras, la ocupación de vía de pública con terrazas.i En esta partida se incluyen también las multas que recauda el Ayuntamiento (infracciones urbanísticas; infracciones de la ordenanza de circulación...)."},
+        {"title": "Transferencias corrientes", "description": "Son los ingresos que recibe el Ayuntamiento de otras administraciones  (Gobierno Central, Junta de Andalucía, Diputación de Málaga...) para financiar sus actividades corrientes."},
+        {"title": "Ingresos patrimoniales", "description": "Son los ingresos que consigue el Ayuntamiento gracias a sus propiedades y patrimonio (interés de los depósitos bancarios, alquiler de sus inmuebles, concesiones administrativas…)."},
+        {"title": "Enajenación y otras inversiones reales", "description": "Son los ingresos derivados de la venta de los terrenos y otras propiedades  del Ayuntamiento."},
+        {"title": "Transferencias de capital", "description": "Son los contribuciones que recibe el Ayuntamiento para financiar inversiones y obras. Pueden venir de otras administraciones o de particulares."},
+        {"title": "Activos financieros", "description": "Son los ingreso que consigue el Ayuntamiento a través de productos financieros (venta de acciones, devoluciones de préstamos...)."},
+        {"title": "Pasivos financieros", "description": "Son los ingresos derivados de préstamos que solicita el Ayuntamiento."}
+    ]
+  },
   "downloads": {
     "title": "Descarga",
     "subtitle": "",
