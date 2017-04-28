@@ -15,7 +15,7 @@ parser.add_argument('-t','--type', help='Budget type (incomes or expenses)',requ
 parser.add_argument('-y','--year', help='Budget year (4 digits)',required=True)
 args = parser.parse_args() 
 
-fileinput = open(args.input, "rb")
+fileinput = open(args.input, "r")
 csvoutput = open(args.type+args.year+".csv", "w")
 csvwriter = csv.writer(csvoutput, delimiter=',', quotechar='"')
 csvwriter.writerow([ "code","name","value", "observations" ])
