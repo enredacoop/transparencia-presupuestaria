@@ -49,24 +49,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row responsible-block">
-                            <div class="col-xs-12">
-                                <div class="row">
-                                    <div class="col-sm-6 col-xs-12">
-                                        <p class="title">Responsable:</p>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-12">
-                                        <p>
-                                            <%= data.contactname %><br>
-                                            <%= data.contactemail %><br>
-                                            <% if (data.contactphone !== "") { %>
-                                                <%= data.contactphone %>
-                                            <% } %>
-                                        </p>
+                        <% if (data.contactname !== "") { %>
+                            <div class="row responsible-block">
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p class="title">Responsable:</p>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p>
+                                                <%= data.contactname %><br>
+                                                <%= data.contactemail %><br>
+                                                <% if (data.contactphone !== "") { %>
+                                                    <%= data.contactphone %>
+                                                <% } %>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <% } %>
                     </div>
                 </div>
             </div>
