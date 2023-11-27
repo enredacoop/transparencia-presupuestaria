@@ -1,6 +1,14 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          base: 'dist'
+        }
+      }
+    },
     concat: {
       js: {
         src: ['src/js/own/common.js', 'src/js/own/override.js', 'src/js/own/app.js', ],
@@ -98,8 +106,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['concat', 'less', 'copy', 'ejs_static', 'watch']);
+  grunt.registerTask('default', ['concat', 'less', 'copy', 'ejs_static', 'connect', 'watch']);
   grunt.registerTask('build', ['concat', 'less', 'copy', 'ejs_static', 'uglify', 'cssmin', 'clean']);
 
 }

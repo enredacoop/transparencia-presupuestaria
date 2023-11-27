@@ -21,7 +21,7 @@ Herramienta para la construcción de sitios web de Transparencia Presupuestaria
 
 Tener instalado nodejs y npm en tu máquina.
 
-##Carga el entorno
+## Carga el entorno
 
 Clona este repositorio y luego ejecuta dentro de su carpeta lo siguiente:
 
@@ -31,19 +31,19 @@ npm install
 
 ```
 
-##Ejecución (para desarrollo)
+## Ejecución (para desarrollo)
 
 ```
 grunt
 ```
 
-##Compilación (para despliegue)
+## Compilación (para despliegue)
 
 ```
 grunt build
 ```
 
-##Carga de datos
+## Carga de datos
 
 Accede a la carpeta ./src/budgets y una vez allí ejecuta el comando
 
